@@ -59,6 +59,7 @@ ul {
 
 a {
     text-decoration: none;
+    float: none;
 }
 
 .bd-grid {
@@ -394,19 +395,20 @@ fieldset {
         width: 90vw;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin-bottom: 20px;
+        margin-top: -10px;
+        margin-bottom: 10px;
     }
 
     #b {
         width: 20vw;
         background-color: white;
-        padding: 15px 15px;
+        padding: 15px 0px;
     }
 
     #bloco-2 > #b > img {
         padding-bottom: 5px;
         margin: auto;
-        width: 15vw;
+        width: 16vw;
     }
 
     #bloco-2 p {
@@ -424,16 +426,15 @@ fieldset {
         flex-direction: row;
         background-color: #fff;
         width: 86vw;
+        margin-bottom: -30px;
     }
 
     #b-img {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        height: 10vh;
+        display: flex;
+        flex-direction: column;
     }
     
     #b-img img{
-        width: 10vw;
         padding: 5px;
     }
 
@@ -447,8 +448,13 @@ fieldset {
     }
 
     #bloco-3 p {
-        margin: auto;
-        width: 60vw;
+        
+        width: 50vw;
+    }
+
+    a {
+        text-decoration: none;
+        float: right;
     }
 
     /*form {
@@ -461,5 +467,44 @@ fieldset {
     .bd-grid {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .header {
+        justify-content: space-between;
+        margin: auto;
+        width: 86vw;
+        position: relative;
+        height: calc(var(--header-height) + 1rem);
+    }
+
+    input {
+        margin-left: 250px;
+    }
+
+    #bloco-3 {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        background-color: #fff;
+        width: 86vw;
+        margin-bottom: -30px;
+    }
+
+    #b-img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #b-img img{
+        height: 10vw;
+        padding: 5px;
+    }
+
+    #b-text {
+        margin-left: 30px;
+    }
+
+    #bloco-3 p {
+        width: 60vw;
     }
 }
