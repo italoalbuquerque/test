@@ -27,7 +27,7 @@ navLink.forEach (n => n.addEventListener('click', linkAction))
 
 /* Form */
 
-let nome = document.querySelector('input#nome')
+/*let nome = document.querySelector('input#nome')
 let sobrenome = document.querySelector('input#sobre')
 let email = document.querySelector('input#email')
 
@@ -35,4 +35,4 @@ function verify () {
 if (String(nome.value).length == 0 || String(sobrenome.value).length == 0 || String(email.value).length == 0) {
     alert('Fill in the field with the desired information!')
 }
-}
+}*/
